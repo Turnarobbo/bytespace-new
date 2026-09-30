@@ -1,36 +1,36 @@
 import "./App.css";
 import instructor from "./assets/hero.png";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Register from "./Register";
 import Login from "./Login";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#" className="logo">
-        <img
-        src="images/Vector.png"
-        />
+      <Link to="/" className="logo">
+        <img src="/images/Vector.png" alt="ByteSpace" />
         <span>ByteSpace</span>
-      </a>
-
+      </Link>
+ 
       <div className="nav-links">
-        <a href="#">Home</a>
+        <Link to="/">Home</Link>
         <a href="#courses">Courses</a>
         <a href="#creator">Creators</a>
       </div>
-
+ 
       <div className="nav-actions">
-        <a href="#login">Sign In</a>
-        <a href="#signup" >  Join Us </a>
-          <img
-          src="images/Style=Outlined.png"
-          />
+        <Link to="/login">Sign In</Link>
+        <Link to="/Register">Join Us</Link>
+ 
+        <img
+          src="/images/Style=Outlined.png"
+          alt=""
+        />
       </div>
     </nav>
   );
 }
-
+ 
 function Hero() {
   return (
     <section className="hero">

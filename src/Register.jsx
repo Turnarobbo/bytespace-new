@@ -1,10 +1,11 @@
 import "./Register.css";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
     <div
      className="register-page">
-        
+
         <img
         src="/images/Vector.png"
         alt="ByteSpace"
@@ -106,8 +107,9 @@ function Register() {
         </form>
 
         <p className="login-text">
-          Already have an account? <span>Login</span>
-        </p>
+  Already have an account?{" "}
+  <Link to="/login">Login</Link>
+</p>
 
       </div>
 

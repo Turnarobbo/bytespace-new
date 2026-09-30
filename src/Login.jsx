@@ -1,4 +1,6 @@
 import "./Login.css";
+import { Link } from "react-router-dom";
+ 
 
 function Login() {
   return (
@@ -100,8 +102,9 @@ function Login() {
         </form>
 
         <p className="login-text">
-          New User <span>Create an Account</span>
-        </p>
+  New User{" "}
+  <Link to="/Register">Create an Account</Link>
+</p>
 
       </div>
 
